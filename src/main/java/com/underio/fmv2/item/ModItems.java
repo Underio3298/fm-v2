@@ -13,7 +13,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, FMV2.MOD_ID);
 
-    public static final RegistryObject<Item> CITRINE = ITEMS.register("crtrine",
+    public static final RegistryObject<Item> CITRINE = ITEMS.register("citrine",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
