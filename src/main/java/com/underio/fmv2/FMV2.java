@@ -1,5 +1,6 @@
 package com.underio.fmv2;
 
+import com.underio.fmv2.block.ModBlocks;
 import com.underio.fmv2.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -33,6 +34,7 @@ public class  FMV2 {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register ourselves for server and other game events we are interested in
